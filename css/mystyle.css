@@ -16,9 +16,7 @@
 }
 
 .sectionone {
-  background: linear-gradient(132deg, #8e0839, #161b2d, #af2a49);
-  background-size: 400% 400%;
-  animation: BackgroundGradient 10s ease infinite;
+  background: linear-gradient(132deg, #010519, #010419, #161b2d);
   text-align: center;
   height: 100vh;
 }
