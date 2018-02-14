@@ -5,8 +5,11 @@
 }
 
 
-.container {
 
+.container {
+  /* makes text not touch the screen */
+  width: 95%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,6 +106,10 @@ img {
     padding: 2px 16px;
 }
 
+.hideme
+{
+    opacity:0;
+}
 
 
 
