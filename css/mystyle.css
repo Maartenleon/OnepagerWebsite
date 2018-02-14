@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+.container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionone {
+  background: linear-gradient(132deg, #8e0839, #161b2d, #af2a49);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 10s ease infinite;
+  text-align: center;
+  height: 100vh;
+}
+
+.titleone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: Open Sans, sans-serif;
+  color: #5bffeb;
+  font-weight: 400;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+}
+
+.button {
+  position: absolute;
+  top: 70%;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 7px;
+  padding: 1.1em;
+  font-family: sans-serif;
+}
+
+.button-accent{
+  color: #fff;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  color: #5bffeb;
+  text-decoration: none;
+}
+
+
+
+/* Section two
+------------------------------------- */
+.sectiontwo {
+  text-align: center;
+  height: 100vh;
+  background-color: #56628c;
+}
+
+.titletwo {
+  font-family: Open Sans, sans-serif;
+  color: #5bffeb;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 70px;
+  padding: 5px;
+}
+
+.card {
+  background-color: #161b2d;
+  border-color: #161b2d;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+/* Add some padding inside the card container */
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.cardcontainer {
+    padding: 2px 16px;
+}
+
+
+
+
+/* Section three
+------------------------------------- */
+.sectionthree {
+  text-align: center;
+  height: 100vh;
+  background-color: #161b2d;
+}
+
+.titlethree {
+  font-family: Open Sans, sans-serif;
+  color: #5bffeb;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 70px;
+  padding: 5px;
+}
+
+@keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
