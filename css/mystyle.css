@@ -4,6 +4,14 @@
   border: 0;
 }
 
+.main-w {
+  overflow: hidden;
+  min-height: 100%;
+  
+  background: #ff0004;
+  background: linear-gradient(to bottom,  #171824 0%,#545463 50%,#696878 100%);
+}
+
 .container {
   /* makes text not touch the screen */
   width: 95%;
@@ -14,7 +22,6 @@
 }
 
 .sectionone {
-  background: linear-gradient(#010519, #161b2d);
   text-align: center;
   height: 100vh;
 }
@@ -28,7 +35,7 @@
   font-family: Open Sans, sans-serif;
   color: #45bcad;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 4em;
   text-transform: uppercase;
   text-align: center;
   padding: 5px;
@@ -36,7 +43,7 @@
 
 .button {
   position: absolute;
-  top: 70%;
+  top: 80%;
   display: inline-block;
   text-align: center;
   font-size: 1.2rem;
@@ -56,8 +63,8 @@
 .button-accent:hover,
 .button-accent:focus {
   color: #fff;
-  background-color: #45bcad;
-  border-color: #45bcad;
+  background-color: #3faa9d;
+  border-color: #3faa9d;
   text-decoration: none;
   cursor: pointer;
   -webkit-transition: background-color 1.5s ease-out;
@@ -68,31 +75,34 @@
 
 
 
-/* Section two
+/* Section three
 ------------------------------------- */
-.sectiontwo {
+.sectionthree {
   text-align: center;
-  height: 100vh;
-  background: linear-gradient(#161b2d, #5d6ca3);
+  height: 100%;
+  position: relative;
 }
 
-.titletwo {
-  font-family: Open Sans, sans-serif;
-  color: #45bcad;
+.titlethree {
+  margin-top: 50%;
+  font-family: Minion;
+  text-align: center;
+  color: #3faa9d;
   font-weight: 400;
-  text-transform: uppercase;
   text-align: left;
-  font-size: 70px;
+  font-size: 5.5em;
   padding: 5px;
+  margin-bottom: 40px;
 }
 
 .card {
-  background-color: #161b2d;
-  border-color: #161b2d;
+  background-color: #21222d;
+  border-color: #21222d;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
+  width: 280px;
 }
 
 /* Add some padding inside the card container */
@@ -101,12 +111,16 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
 
-img {
+img card-img-top {
     border-radius: 5px 5px 0 0;
+    width: 310px;
+    overflow: hidden;
+    height: 300px;
 }
 
 .cardcontainer {
     padding: 2px 16px;
+
 }
 
 .hideme
@@ -114,28 +128,91 @@ img {
     opacity:0;
 }
 
-
-
-/* Section three
+/* Section two
 ------------------------------------- */
-.sectionthree {
+.sectiontwo {
   text-align: center;
-  height: 100vh;
-  background: linear-gradient(#5d6ca3, #161b2d);
+  height: 75vh;
+  position: relative;
 }
 
-.titlethree {
-  font-family: Open Sans, sans-serif;
-  color: #45bcad;
+.titletwo {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Minion;
+  color: #3faa9d;
   font-weight: 400;
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 70px;
+  font-size: 5.5em;
   padding: 5px;
+  z-index: 2;
 }
 
-@keyframes BackgroundGradient {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
+.text1 {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: auto;
+  width: 330px;
+  font-family: Open Sans, sans-serif;
+  color: #dedede;
+  padding: 5px;
+  font-size: 1.2em;
+  z-index: 2;
+}
+
+
+/* Section four
+---------------------------------------- */
+.sectionfour {
+  text-align: center;
+  height: 60vh;
+  position: relative;
+  background: #3faa9d;
+  margin-top: -.8vh;
+}
+
+.titlefour {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-family: Minion;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 5.5em;
+  padding: 5px;
+  margin-bottom: 40px;
+}
+
+/* when screen gets smaller */
+@media only screen and (max-width: 320px) {
+
+   titleone {
+      font-size: 2em;
+   }
+
+   titletwo {
+      font-size: 2em;
+   }
+
+   titlethree {
+      font-size: 2em;
+   }
+
+   titlefour {
+      font-size: 2em;
+   }
+
 }
